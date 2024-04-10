@@ -14,6 +14,7 @@ import com.example.chatbot.ui.theme.ChatbotTheme
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
+
         super.onCreate(savedInstanceState)
         setContent {
             ChatbotTheme {
@@ -22,7 +23,7 @@ class MainActivity : ComponentActivity() {
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colorScheme.background
                 ) {
-                    chatbot()
+                    Chatbot()
                 }
             }
         }
@@ -37,10 +38,10 @@ fun Greeting(name: String, modifier: Modifier = Modifier) {
     )
 }
 
-@Preview(showBackground = true)
+@Preview(showBackground = true, showSystemUi = true)
 @Composable
 fun GreetingPreview() {
     ChatbotTheme {
-        Greeting("Android")
+        Chatbot()
     }
 }

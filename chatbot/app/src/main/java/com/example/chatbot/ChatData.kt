@@ -6,6 +6,6 @@ data class ChatData(
 )
 
 enum class ChatRoleEnum(val role : String){
-    USER("User"),
-    MODEL("Model")
+    USER("user"),
+    MODEL("model")
 }

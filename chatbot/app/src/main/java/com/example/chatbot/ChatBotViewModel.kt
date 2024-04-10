@@ -7,7 +7,7 @@ import com.google.ai.client.generativeai.GenerativeModel
 import com.google.ai.client.generativeai.type.content
 import kotlinx.coroutines.launch
 
-class ChatBotVm: ViewModel() {
+class ChatBotViewModel: ViewModel() {
     val list by lazy {
         mutableStateListOf<ChatData>()
     }
